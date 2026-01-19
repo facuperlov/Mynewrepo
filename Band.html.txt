@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bad Bunny</title>
+</head>
+<body>
+
+<h1>Bad Bunny</h1>
+
+<p>
+Bad Bunny is a Puerto Rican artist known for blending reggaeton, Latin trap, and pop music.
+</p>
+
+<h2>Members</h2>
+<ul>
+    <li>Benito Antonio Martínez Ocasio</li>
+</ul>
+
+<p>
+Official website:
+<a href="https://www.badbunnypr.com">Bad Bunny Official Site</a>
+</p>
+
+<h2>Albums</h2>
+<dl>
+    <dt>YHLQMDLG</dt>
+    <dd>A high-energy album that helped define modern Latin trap.</dd>
+
+    <dt>El Último Tour Del Mundo</dt>
+    <dd>A more emotional album that explores fame and personal growth.</dd>
+
+    <dt>Un Verano Sin Ti</dt>
+    <dd>A summer-inspired album with tropical and upbeat sounds.</dd>
+</dl>
+
+</body>
+</html>
