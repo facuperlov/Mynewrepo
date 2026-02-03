@@ -1,0 +1,42 @@
+/* a) footer selector */
+footer{
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  color: darkblue;
+  padding: 10px;
+  border: 2px dashed darkblue;
+}
+
+/* b) id notice: 80% width and centered */
+#notice{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* c) class: headline with dotted line underneath */
+.dottedHeadline{
+  color: #2b2b2b;
+  border-bottom: 3px dotted #2b2b2b;
+  padding-bottom: 6px;
+}
+
+/* d) h1: drop-shadow + 50% transparent background + sans-serif 4em */
+h1{
+  font-family: Arial, sans-serif;
+  font-size: 4em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  background-color: rgba(255,255,255,0.5);
+  padding: 10px;
+}
+
+/* e) id section: small red Arial + background + 80% width + drop shadow */
+#section{
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  font-size: small;
+  color: red;
+  background-color: rgba(255,255,255,0.7);
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
