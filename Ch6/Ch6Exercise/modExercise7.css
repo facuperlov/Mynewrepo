@@ -1,0 +1,15 @@
+/* Unvisited hyperlink */
+a:link {
+  color: blue;
+}
+
+/* Visited hyperlink */
+a:visited {
+  color: purple;
+}
+
+/* Hover state */
+a:hover {
+  color: red;
+  text-decoration: none;
+}
