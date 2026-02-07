@@ -1,0 +1,50 @@
+/* ===== Modified from exercise7.css (Chapter 4) ===== */
+
+/* 1. Footer selector */
+footer {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  color: darkblue;
+  padding: 10px;
+  border: 2px dashed darkblue;
+}
+
+/* 2. ID named notice */
+#notice {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* 3. Headline class with dotted line underneath */
+.headline {
+  color: purple;
+  border-bottom: 3px dotted purple;
+  padding-bottom: 5px;
+}
+
+/* 4. h1 selector with drop-shadow text and transparent background */
+h1 {
+  font-family: sans-serif;
+  font-size: 4em;
+  background-color: rgba(173, 216, 230, 0.5);
+  padding: 10px;
+  text-shadow: 2px 2px 4px gray;
+}
+
+/* 5. ID named section */
+#section {
+  width: 80%;
+  font-family: Arial, sans-serif;
+  font-size: small;
+  color: red;
+  background-color: #ffeeee;
+  padding: 10px;
+  margin: 10px auto;
+  box-shadow: 3px 3px 6px gray;
+}
+
+/* ===== Chapter 6 hyperlink colors + remove underline on hover ===== */
+a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { color: red; text-decoration: none; }
+
