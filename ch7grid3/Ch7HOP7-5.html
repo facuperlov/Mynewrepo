@@ -4,19 +4,80 @@
 <title>Casita Sedona</title>
 <meta charset="utf-8">
 <style>
-body { font-family: Arial, sans-serif; margin: 0; }
 
-#wrapper { background-color: #ffffff; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
 
-header { padding: 20px; }
-nav { padding: 10px; }
-main { padding: 10px; }
-aside { padding: 10px; }
-footer { padding: 10px; text-align: center; }
+/* Assign grid areas */
+header { grid-area: header; }
+nav    { grid-area: nav; }
+main   { grid-area: main; }
+aside  { grid-area: aside; }
+footer { grid-area: footer; }
+
+/* Grid container */
+#wrapper {
+    display: grid;
+
+    grid-template-columns: 150px 1fr 30%;
+    grid-template-rows: 100px auto 50px;
+
+    grid-template-areas:
+        "header header header"
+        "nav    main   aside"
+        "footer footer footer";
+
+    width: 90%;
+    margin: auto;
+}
+
+/* Basic Styling */
+
+header {
+    background-color: #869dc7;
+    color: white;
+    padding: 20px;
+    font-size: 150%;
+    background-image: url(lighthouseisland.jpg);
+    background-size: cover;
+}
+
+nav {
+    background-color: #b3c7e6;
+    padding: 15px;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000066;
+    font-weight: bold;
+}
+
+main {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+aside {
+    padding: 15px;
+    background-color: #eaeaea;
+}
+
+footer {
+    background-color: #869dc7;
+    text-align: center;
+    padding: 15px;
+}
+
 </style>
 </head>
 
 <body>
+
 <div id="wrapper">
 
 <header>
@@ -24,10 +85,10 @@ footer { padding: 10px; text-align: center; }
 </header>
 
 <nav>
-  <a href="#">Home</a><br>
-  <a href="#">Rooms</a><br>
-  <a href="#">Specials</a><br>
-  <a href="#">Contact</a><br>
+  <a href="#">Home</a>
+  <a href="#">Rooms</a>
+  <a href="#">Specials</a>
+  <a href="#">Contact</a>
 </nav>
 
 <main>
@@ -41,7 +102,7 @@ footer { padding: 10px; text-align: center; }
   <p>Each day begins with a hearty breakfast that includes your choice of eggs, baked goods, and fresh fruit.</p>
 
   <h2>About Your Hosts</h2>
-  <p>Your hosts, Melanie and Greg Targos, are long-time Sedona residents who love to share this beautiful area.</p>
+  <p>Your hosts are long-time Sedona residents who love to share this beautiful area.</p>
 </main>
 
 <aside>
@@ -55,5 +116,7 @@ footer { padding: 10px; text-align: center; }
 </footer>
 
 </div>
+
 </body>
 </html>
+
