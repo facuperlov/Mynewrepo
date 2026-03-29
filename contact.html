@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Trillium Media Design - Contact</title>
-</head>
+<meta charset="utf-8">
+<title>Contact Form</title>
 
+<style>
+    /* Form styling */
+    form {
+        background-color: #EAEAEA;
+        font-family: Arial, sans-serif;
+        width: 350px;
+        padding: 10px;
+    }
+
+    /* Labels */
+    label {
+        float: left;
+        clear: left;
+        display: block;
+        width: 100px;
+        padding-right: 10px;
+        margin-top: 10px;
+        text-align: right;
+    }
+
+    /* Inputs */
+    input {
+        display: block;
+        margin-top: 10px;
+    }
+
+    /* Textarea */
+    textarea {
+        display: block;
+        margin-top: 10px;
+    }
+
+    /* Submit button alignment */
+    input[type="submit"] {
+        margin-left: 110px;
+    }
+</style>
+
+</head>
 <body>
 
-<header>
-  <h1>Trillium Media Design</h1>
-</header>
+<h1>Contact Us</h1>
 
-<nav>
-  <b>
-    <a href="index.html">Home</a> &nbsp;
-    <a href="services.html">Services</a> &nbsp;
-    <a href="contact.html">Contact</a>
-  </b>
-</nav>
+<form>
 
-<main>
-  <h2>Contact Trillium Media Design Today</h2>
+    <label for="myName">Name:</label>
+    <input type="text" name="myName" id="myName">
 
-  <ul>
-    <li>E-mail: contact@trilliummediadesign.com</li>
-    <li>Phone: 555-555-5555</li>
-  </ul>
-</main>
+    <label for="myEmail">E-mail:</label>
+    <input type="text" name="myEmail" id="myEmail">
 
-<footer>
-  <small><i>Copyright &copy; 2020 Facundo Perlov</i></small>
-</footer>
+    <label for="myComments">Comments:</label>
+    <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+
+    <input type="submit" value="Submit">
+
+</form>
 
 </body>
 </html>
