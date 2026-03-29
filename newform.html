@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>New Form</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 30px;
-            line-height: 1.6;
         }
 
         form {
@@ -21,15 +21,10 @@
             vertical-align: top;
         }
 
-        input, select {
-            margin-bottom: 10px;
-        }
-
         fieldset {
             width: 500px;
-            padding: 10px;
             margin-top: 15px;
-            margin-bottom: 15px;
+            padding: 10px;
         }
 
         legend {
@@ -39,76 +34,71 @@
         .radio-group label {
             display: inline;
             width: auto;
-            margin-right: 15px;
+            margin-right: 10px;
         }
 
         .footer {
             margin-top: 30px;
-            font-size: 0.95em;
         }
     </style>
 </head>
+
 <body>
 
-    <h1>Registration Form</h1>
+<h1>Registration Form</h1>
 
-    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
-        
-        <label for="username">User Name:</label>
-        <input type="text" name="username" id="username" maxlength="30"><br>
+<form method="post" action="https://webdevbasics.net/scripts/demo.php">
 
-        <label>Password:</label>
-        <input type="password" name="pword" id="pword"><br>
+    <label for="username">User Name:</label>
+    <input type="text" name="username" id="username" maxlength="30"><br>
 
-        <label>Favorite Day:</label>
-        <span class="radio-group">
-            <input type="radio" name="favday" id="monday" value="Monday">
-            <label for="monday">Monday</label>
+    <label for="pword">Password:</label>
+    <input type="password" name="pword" id="pword"><br>
 
-            <input type="radio" name="favday" id="friday" value="Friday">
-            <label for="friday">Friday</label>
+    <label>Favorite Day:</label>
+    <span class="radio-group">
+        <input type="radio" name="favday" value="Monday"> Monday
+        <input type="radio" name="favday" value="Friday"> Friday
+        <input type="radio" name="favday" value="Sunday"> Sunday
+    </span><br>
 
-            <input type="radio" name="favday" id="sunday" value="Sunday">
-            <label for="sunday">Sunday</label>
-        </span><br>
+    <label for="social">Favorite Social Network:</label>
+    <select name="social" id="social">
+        <option>Instagram</option>
+        <option>TikTok</option>
+        <option>X / Twitter</option>
+        <option>Facebook</option>
+    </select><br>
 
-        <label for="social">Favorite Social Network:</label>
-        <select name="social" id="social">
-            <option value="instagram">Instagram</option>
-            <option value="tiktok">TikTok</option>
-            <option value="x">X / Twitter</option>
-            <option value="facebook">Facebook</option>
-        </select>
+    <fieldset>
+        <legend>Shipping Address</legend>
 
-        <fieldset>
-            <legend>Shipping Address</legend>
+        <label for="address1">AddressLine1:</label>
+        <input type="text" name="address1" id="address1"><br>
 
-            <label for="addressline1">AddressLine1:</label>
-            <input type="text" name="addressline1" id="addressline1"><br>
+        <label for="address2">AddressLine2:</label>
+        <input type="text" name="address2" id="address2"><br>
 
-            <label for="addressline2">AddressLine2:</label>
-            <input type="text" name="addressline2" id="addressline2"><br>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city"><br>
 
-            <label for="city">City:</label>
-            <input type="text" name="city" id="city"><br>
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state"><br>
 
-            <label for="state">State:</label>
-            <input type="text" name="state" id="state"><br>
+        <label for="zip">ZIP:</label>
+        <input type="text" name="zip" id="zip"><br>
+    </fieldset>
 
-            <label for="zip">ZIP:</label>
-            <input type="text" name="zip" id="zip"><br>
-        </fieldset>
+    <input type="hidden" name="userid" value="facuperlov">
 
-        <input type="hidden" name="userid" value="facuperlov">
+    <input type="submit" value="Sign Up">
 
-        <input type="image" src="signup.gif" alt="Sign Up" width="120" height="40">
+</form>
 
-    </form>
-
-    <div class="footer">
-        Facundo Perlov<br>
-        fperlov@mail.lipscomb.edu
-    </div>
+<div class="footer">
+    Facundo Perlov<br>
+    fperlov@mail.lipscomb.edu
+</div>
 
 </body>
 </html>
